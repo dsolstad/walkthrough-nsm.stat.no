@@ -14,7 +14,7 @@ foreach (explode(" ", $x) as $v) {
 ?>
 ```
 
-Run the script and pipe it to lvl6.bin:
+Run the script and pipe the output to lvl6.bin:
 `$ php lvl6.php > lvl6.bin`
 
 gdb doesn't want to touch it, so after disassembling the file with [Ida](https://www.hex-rays.com/products/ida/support/download_freeware.shtml "Ida") I get this:
@@ -72,12 +72,14 @@ lvl6_50.bin: DBase 3 data file
 
 Now we got some interesting results. Let's start with the DBase file.
 
+```
 $ dbview lvl6_50.bin
 File version  : 3
 Last update   : 197/209/2133
 Number of recs: -943272614
 Header length : 23248
 Record length : 51145
+```
 
 Seems like a corrupt dBase 3 file.
 
