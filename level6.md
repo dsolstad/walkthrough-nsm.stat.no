@@ -1,6 +1,8 @@
 ### Level 6
 
 First we can try to insert the hex values into a file:
+
+```php
 <?php
 
 $x = "31 db f7 e3 68 ff f4 f5 e2 68 fb f5 b0 f8 68 b0 fb fc ff 68 fc f5 e2 f5 68 f5 e2 b0 f6 68 e2 f5 fe f7 68 c6 f9 b0 e4 b9 90 90 90 90 31 0c 04 04 04 3c 1c 75 f7 89 e1 31 c0 b0 04 b2 1c cd 80 b0 01 cd 80";
@@ -10,6 +12,7 @@ foreach (explode(" ", $x) as $v) {
 }
 
 ?>
+```
 
 Run the script and pipe it to lvl6.bin:
 `$ php lvl6.php > lvl6.bin`
