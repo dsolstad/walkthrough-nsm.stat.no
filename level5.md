@@ -9,7 +9,7 @@ In the middle frame in Wireshark, expand the MIME Multipart list and find "Media
 
 Now we got the file, but it isn't recognized as anything. Let's try to xor it.
 
-In a Linux shell we can convert the binary to hex and store the result in a file:
+To get the hex values like the format in level 3, we can convert the binary to hex and store the result in a file with a Linux shell:
 
 `$ cat lvl5.bin | xxd -g 1 | cut -c10-58 | tr -d '\n' | sed 's/  / /g' > lvl5.hex`
 
@@ -56,9 +56,10 @@ I just tried "BELONG" as the password because of the hint in the file path in th
 
 The contents of utfordring.txt:
 ```
-VmFyIGRldHRlIGZvciBsZXR0PyBWaWwgZHUgaGEgZmxlcmUgdXRmb3JkcmluZ2VyPyBTw7hrIHDDpSBlbiBzdGlsbGluZyBob3MgTlNNLiBLYW5za2plIHN0aWxsaW5nZW4gTmV0dmVya3NhbmFseXNlIGVyIG5vZSBmb3IgZGVnPwo=```
+VmFyIGRldHRlIGZvciBsZXR0PyBWaWwgZHUgaGEgZmxlcmUgdXRmb3JkcmluZ2VyPyBTw7hrIHDDpSBlbiBzdGlsbGluZyBob3MgTlNNLiBLYW5za2plIHN0aWxsaW5nZW4gTmV0dmVya3NhbmFseXNlIGVyIG5vZSBmb3IgZGVnPwo=
+```
 
-Let's try base64 on that string:
+Let's try base64_decode on that string:
 ```php
 <?php
 
