@@ -60,7 +60,7 @@ Result:
 79, 65 diff= -14
 ```
 
-We can see a pattern here. First char rot 13, then rot 8 and then 14, before it starts over again.
+We can see a pattern here. First rot 13, then rot 8 and then 14, before it starts over again.
 Now we can follow the same pattern and convert the rest.
 
 ```php
