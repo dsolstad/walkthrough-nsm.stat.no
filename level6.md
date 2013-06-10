@@ -25,8 +25,7 @@ lvl6.bin: data
 
 gdb and objdump didn't want to touch, but I found this online disassembler useful: `http://onlinedisassembler.com/odaweb/run_hex`
 
-Just paste the hex code in there and you will get this output:
-I have tried to comment each line.
+Just paste the hex code in there and you will get this output where I have commented each line.
 
 ```asm
  xor    ebx,ebx             ; XOR the value in ebx with ebx (make ebx zero)
@@ -56,7 +55,7 @@ I have tried to comment each line.
 What the program basically does is to XOR the values on the stack with 0x90909090 and then output the new values.
 Here I have translated the assembly to php:
 
-```
+```php
 <?php
 
 // The stack with the pushed values.
@@ -88,6 +87,7 @@ for ($i = 0; $i < 7; $i++) {
 ```
 
 Result: `Vi trenger flere kloke hoder`
+
 English: `We need more bright minds`
 
 Recommended reading:
