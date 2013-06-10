@@ -83,9 +83,9 @@ function str_rot($s, $n = 13) {
 $str = "ULFCTXBYSAKYFLMGFAGSDQMGGXAEVDVFSRF";
 $i = 0;
 foreach (str_split($str) as $v) {
-    if (($i % 3) == 0) print str_rot($v, 13);
-    elseif (($i % 3) == 1) print str_rot($v, 8);
-    elseif (($i % 3) == 2) print str_rot($v, 14);
+    if (($i % 3) == 0) echo str_rot($v, 13);
+    elseif (($i % 3) == 1) echo str_rot($v, 8);
+    elseif (($i % 3) == 2) echo str_rot($v, 14);
     $i++;
 }
 

@@ -24,7 +24,7 @@ for ($i = 66; $i < 67; $i++) {
     foreach (explode(" ", $x) as $v) {
         echo chr(hexdec($v) ^ $i);
     }
-    print "\n";
+    echo "\n";
 }
 
 ?>

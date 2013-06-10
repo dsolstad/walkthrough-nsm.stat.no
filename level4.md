@@ -1,7 +1,7 @@
 ### Level 4
 
 Okey we have this image. First let's see if there is any comments.
-Goto http://regex.info/exif.cgi and type in the url to the image
+Goto http://regex.info/exif.cgi and type in the url to the image.
 
 We find this base64 string:
 `R2plbmJydWsgYXYgcGFzc29yZCBlciBldCBhbHQgZm9yIHZhbmxpZyBmZW5vbWVuLiBLYW5za2plIGRldCBrYW4gYnJ1a2VzIHRpbCBkaW4gZm9yZGVsIGhlcj8=`
