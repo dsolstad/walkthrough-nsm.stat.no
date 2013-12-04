@@ -23,9 +23,9 @@ $ file lvl6.bin
 lvl6.bin: data
 ```
 
-gdb and objdump didn't want to touch, but I found this online disassembler useful: `http://onlinedisassembler.com/odaweb/run_hex`
+gdb and objdump didn't want to touch it, but I found this online disassembler useful: `http://onlinedisassembler.com/odaweb/run_hex`
 
-Just paste the hex code in there and you will get this output where I have commented each line.
+Just paste the hex code and you will get this output. I have tried to comment each line.
 
 ```asm
  xor    ebx,ebx             ; XOR the value in ebx with ebx (make ebx zero)
