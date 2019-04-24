@@ -4,9 +4,9 @@ ULFC://TXBYS.AKY.FLMG.FA/GSD/QM/GGXAEVDVFSRF?
 
 This also looks like rot 13, but more complex.
 
-We can easiliy guess that the first part should be HTTP://BLOGG.NSM.STAT.NO, but what about the rest?
+We can easily guess that the first part should be HTTP://BLOGG.NSM.STAT.NO, but what about the rest?
 
-I wrote this script that finds the difference in the number of characters between the encrypted and the "guessed" characters I just made.
+I wrote this script that finds the difference in the number of characters between the encrypted and the "guessed" characters.
 
 ```php
 <?php
